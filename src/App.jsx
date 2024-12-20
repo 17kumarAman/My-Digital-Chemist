@@ -9,29 +9,39 @@ import Faqs from "./components/home/Faqs";
 import Footer from "./components/home/Footer";
 import Offers from "./components/home/Offers";
 import ScrollToTop from "./components/home/ScrollToTop";
+import NeedHelp from "./components/home/NeedHelp";
+import Testimonials from "./components/home/Testimonials";
+import AppDownload from "./components/home/AppDownload";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="bg-gradient-to-r from-blue-50 to-blue-100 min-h-screen">
-      <Navbar />
+    <div className="bg-gradient-to-r from-blue-50 to-blue-100 min-h-screen"><Navbar />
 
-      {/* Hero Section */}
-      <Banner />
-
-      {/* About Us Section */}
-      <About />
-      <Offers />
-      {/* Advantages Section */}
-      <Advantages />
-
-      {/* FAQ Section */}
-      <Faqs />
-
-      {/* Footer Section */}
-      <ScrollToTop/>
-      <Footer />
+    {/* Hero Section */}
+    <Banner />
+    
+    {/* About Us Section */}
+    <About />
+    <Offers />
+    
+    {/* Testimonials Section */}
+    <Testimonials />
+    
+    {/* Advantages Section */}
+    <Advantages />
+    
+    {/* App Download Section */}
+    <AppDownload />
+    
+    {/* FAQ Section */}
+    <NeedHelp />
+    <Faqs />
+    
+    {/* Footer Section */}
+    <ScrollToTop />
+    <Footer />
     </div>
   );
 }

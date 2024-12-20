@@ -1,7 +1,6 @@
 import React from "react";
 
 function Offers() {
-  // Define services as an array of objects
   const services = [
     {
       title: "Fast Delivery",
@@ -23,16 +22,6 @@ function Offers() {
       description:
         "Get expert medical advice and consultation from certified health professionals.",
     },
-    {
-      title: "Easy Returns",
-      description:
-        "If you're not satisfied with your order, we offer hassle-free returns and refunds.",
-    },
-    {
-      title: "24/7 Support",
-      description:
-        "Our customer support team is available 24/7 to assist you with any inquiries or concerns.",
-    },
   ];
 
   return (
@@ -40,8 +29,7 @@ function Offers() {
       <h2 className="text-3xl md:text-4xl font-bold text-blue-800 mb-8 text-center">
         What We Offer
       </h2>
-      <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-        {/* Map through the services array */}
+      <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {services.map((service, index) => (
           <div
             key={index}

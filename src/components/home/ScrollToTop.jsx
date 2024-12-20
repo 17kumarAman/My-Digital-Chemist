@@ -4,7 +4,6 @@ import { ChevronUpIcon } from "@heroicons/react/24/solid"; // Importing the arro
 function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Show the button when the user scrolls down 200px
   const toggleVisibility = () => {
     if (window.pageYOffset > 200) {
       setIsVisible(true);
@@ -13,7 +12,6 @@ function ScrollToTop() {
     }
   };
 
-  // Scroll to top function
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -22,10 +20,8 @@ function ScrollToTop() {
   };
 
   useEffect(() => {
-    // Add event listener on mount
     window.addEventListener("scroll", toggleVisibility);
 
-    // Cleanup on component unmount
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 

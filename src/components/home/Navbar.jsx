@@ -7,13 +7,12 @@ function Navbar() {
 
   return (
     <>
-      {/* Header Section */}
+
       <header className="bg-white shadow-md py-4 px-6 flex justify-between items-center">
         <a href="/">
         <Logo />
         </a>
 
-        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center justify-between gap-6">
           <div className="flex gap-6 items-center">
             <a href="#home" className="text-blue-600 hover:text-blue-800">
@@ -32,13 +31,11 @@ function Navbar() {
               FAQ
             </a>
           </div>
-          {/* Download Button on Desktop */}
-          <button className="bg-blue-600 text-white py-2 px-4 rounded-md shadow hover:bg-blue-700">
+          <a href="#app-download" className="bg-blue-600 text-white py-2 px-4 rounded-md shadow hover:bg-blue-700">
             Download App
-          </button>
+          </a>
         </nav>
 
-        {/* Mobile Navigation */}
         <div className="md:hidden flex items-center">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -53,7 +50,6 @@ function Navbar() {
         </div>
       </header>
 
-      {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-white shadow-md py-4 px-6">
           <nav className="flex flex-col gap-4">
@@ -72,10 +68,10 @@ function Navbar() {
             <a href="#faq" className="text-blue-600 hover:text-blue-800">
               FAQ
             </a>
-            {/* Download Button on Mobile */}
-            <button className="bg-blue-600 text-white py-2 px-4 rounded-md shadow hover:bg-blue-700">
+            
+            <a href="app-download" className="bg-blue-600 text-white py-2 px-4 rounded-md shadow hover:bg-blue-700">
               Download App
-            </button>
+            </a>
           </nav>
         </div>
       )}

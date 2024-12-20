@@ -3,7 +3,6 @@ import React from "react";
 function Banner() {
   return (
     <div>
-      {/* Hero Section */}
       <section id="home" className="text-center py-16 px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-blue-800 mb-4">
           Your Trusted Online Pharmacy
