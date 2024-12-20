@@ -15,9 +15,9 @@ function NeedHelp() {
           <button className="bg-blue-600 text-white py-2 px-6 rounded-md shadow hover:bg-blue-700 transition">
             Contact Support
           </button>
-          <button className="bg-white border border-blue-600 text-blue-600 py-2 px-6 rounded-md shadow hover:bg-blue-100 transition">
+          <a href="#faq" className="bg-white border border-blue-600 text-blue-600 py-2 px-6 rounded-md shadow hover:bg-blue-100 transition">
             Visit FAQs
-          </button>
+          </a>
         </div>
       </div>
     </section>

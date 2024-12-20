@@ -28,7 +28,7 @@ function AppDownload() {
           </div>
         </div>
         <img
-          src="src\assets\Screenshot 2024-12-18 203914.png"
+          src="Screenshot 2024-12-18 203914.png"
           alt="App Preview"
           className="rounded-lg shadow-lg w-full md:w-auto max-w-sm"
         />
